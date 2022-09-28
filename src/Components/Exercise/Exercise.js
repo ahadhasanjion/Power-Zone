@@ -22,7 +22,7 @@ const Exercise = () => {
                 </div>
 
             </div>
-            <div className='peoples-data'>
+            <div>
                 <Cart></Cart>
             </div>
             
