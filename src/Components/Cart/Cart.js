@@ -1,7 +1,13 @@
 import React from 'react';
 import './Cart.css';
 import images from'../../images/pexels-pixabay-260352.jpg';
-const Cart = () => {
+const Cart = (props) => {
+   const {cart} = props;
+   let seconds = 0;
+   for(const exercises of cart){
+     seconds = seconds + exercises.time;
+   }
+    
     return (
         <div className="cart bg-gray-400">
             <div className="cart-name">
@@ -14,7 +20,7 @@ const Cart = () => {
             <div className='my-6'>
                 <p className='px-3 mb-4'>Add A Break</p>
                 <div className='add-a-break flex'>
-                    <span>10<small>s</small></span>
+                    <span><small>s</small></span>
                     <span>20<small>s</small></span>
                     <span>30<small>s</small></span>
                     <span>40<small>s</small></span>
@@ -24,13 +30,13 @@ const Cart = () => {
             </div>
             <div className='ed px-3'>
                 <p>Exercise Details</p>
-                <div className='flex justify-between p-2 bg-base-300 rounded mt-3'>
+                <div className='flex justify-between p-2 bg-base-300 rounded mt-3 py-3'>
                     <p>Exercise Time</p>
-                    <p>200Seconds</p>
+                    <p>{seconds}s</p>
                 </div>
                 <div className='flex justify-between p-2 bg-base-300 rounded mt-4'>
                     <p>Break Time</p>
-                    <p>200Seconds</p>
+                    <p>seconds</p>
                 </div>
             </div>
             <div className='btn-completed'>
