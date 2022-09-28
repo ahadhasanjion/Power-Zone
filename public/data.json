@@ -1,0 +1,38 @@
+[
+    {
+      "_id": 1,
+      "picture": "https://i.ibb.co/NVY9m3D/pexels-allan-mas-5383776.jpg",
+      "age": 25,
+      "time": 30
+    },
+    {
+      "_id": 2,
+      "picture": "https://i.ibb.co/J5wdnFf/pexels-cesar-gale-o-3253498.jpg",
+      "age": 30,
+      "time": 30
+    },
+    {
+      "_id": 3,
+      "picture": "https://i.ibb.co/g6v3wF1/pexels-cottonbro-4761352.jpg",
+      "age": 20,
+      "time": 30
+    },
+    {
+      "_id": 4,
+      "picture": "https://i.ibb.co/TrPY8Sw/pexels-leon-ardho-1552242.jpg",
+      "age": 26,
+      "time": 30
+    },
+    {
+      "_id": 5,
+      "picture": "https://i.ibb.co/0YBtcxV/pexels-li-sun-2294363.jpg",
+      "age": 23,
+      "time": 30
+    },
+    {
+      "_id": 6,
+      "picture": "https://i.ibb.co/9pJJd11/pexels-tima-miroshnichenko-5327487.jpg",
+      "age": 35,
+      "time": 30
+    }
+  ]
