@@ -1,6 +1,9 @@
 import React from 'react';
 import './Cart.css';
 import images from'../../images/pexels-pixabay-260352.jpg';
+import Swal from 'sweetalert2';
+
+
 const Cart = (props) => {
    const {cart} = props;
    let seconds = 0;
@@ -41,7 +44,11 @@ const Cart = (props) => {
                 </div>
             </div>
             <div className='btn-completed'>
-                 <button className="btn btn-primary w-100 mt-10">Exercise Completed</button>
+                <button className="btn btn-primary w-100 mt-10">
+                Swal.fire('Good job!','You clicked the button!','success');
+
+                    Exercise Completed
+                </button>
             </div>
         </div>
     );
