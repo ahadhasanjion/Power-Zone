@@ -1,10 +1,11 @@
 import React from 'react';
+import './Faq.css';
 
 const Faq = () => {
     return ( 
         <div>
-            <div class="accordion" id="accordionExample">
-  <div class="accordion-item bg-white border border-gray-200">
+            <div class="accordion faq" id="accordionExample">
+  <div class="accordion-item mb-5 bg-white border border-gray-200">
     <h2 class="accordion-header mb-0" id="headingOne">
       <button class="
         accordion-button
@@ -32,7 +33,7 @@ const Faq = () => {
       </div>
     </div>
   </div>
-  <div class="accordion-item bg-white border border-gray-200">
+  <div class="accordion-item mb-5 bg-white border border-gray-200">
     <h2 class="accordion-header mb-0" id="headingTwo">
       <button class="
         accordion-button
@@ -61,7 +62,7 @@ const Faq = () => {
       </div>
     </div>
   </div>
-  <div class="accordion-item bg-white border border-gray-200">
+  <div class="accordion-item mb-5 bg-white border border-gray-200">
     <h2 class="accordion-header mb-0" id="headingThree">
       <button class="
         accordion-button

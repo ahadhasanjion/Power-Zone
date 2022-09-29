@@ -1,8 +1,7 @@
 import React from 'react';
 import './Cart.css';
 import images from'../../images/pexels-pixabay-260352.jpg';
-import Swal from 'sweetalert2';
-
+import { ToastContainer, toast } from 'react-toastify';
 
 const Cart = (props) => {
    const {cart} = props;
@@ -10,6 +9,8 @@ const Cart = (props) => {
    for(const exercises of cart){
      seconds = seconds + exercises.time;
    }
+   const notify = () => toast("Wow so easy!");
+
     
     return (
         <div className="cart bg-gray-400">
@@ -43,12 +44,9 @@ const Cart = (props) => {
                     <p>seconds</p>
                 </div>
             </div>
-            <div className='btn-completed'>
-                <button className="btn btn-primary w-100 mt-10">
-                Swal.fire(Good job!,You clicked the button!success);
-
-                    Exercise Completed
-                </button>
+            <div onClick={notify} className='btn-completed'>
+                <button className="btn btn-primary w-100 mt-10">Exercise Completed</button>  
+                <ToastContainer />
             </div>
         </div>
     );
