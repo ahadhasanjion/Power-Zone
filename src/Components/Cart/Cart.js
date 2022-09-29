@@ -13,21 +13,14 @@ const Cart = (props) => {
    const toast = () => {
     Swal.fire('Good job!','You clicked the button!','success')
    }
-
-   const second = [10, 20, 30, 40, 50]
-   const [addbreak, SetAddBreakTime] = useState(0);
-   const handleClick = (y) => {
-    SetAddBreakTime(y)
-   }
-
-   const restTime = (id) => {
-    document.getElementById('rest').innerText= document.getElementById(id).innerText;
-
-     const newTime = document.getElementById('rest').innerText;
-     localStorage.setItem('time', newTime);
-   }
+   
+   const handleClick = (id) => {
+        document.getElementById('rest').innerText = document.getElementById(id).innerText;
+        const newTime = document.getElementById('rest').innerText;
+        localStorage.setItem('time', newTime);
+   } 
     
-    return (
+    return(
         <div className="cart bg-gray-400">
             <div className="cart-name">
                 <img className="cart-image" src={images} alt="" />
@@ -53,15 +46,11 @@ const Cart = (props) => {
             <div className='mt-10'>
                 <p className='px-3 mb-4'>Add A Break</p>
                 <div className='add-a-break flex gap-2 ml-3'>
-                    {
-                        second.map(t =><button onClick={() => handleClick(t)} key={t} className='btn' id='rest'>{t}<small>s</small></button>
-                        )
-                    }
-                    {/* <button onClick={() => handleClick(addbreak)} className='btn btn-xl'>10<small>s</small></button>
-                    <button onClick={() => handleClick(addbreak)} className='btn btn-xl'>20<small>s</small></button>
-                    <button onClick={() => handleClick(addbreak)} className='btn btn-xl'>30<small>s</small></button>
-                    <button onClick={() => handleClick(addbreak)} className='btn btn-xl'>40<small>s</small></button>
-                    <button onClick={() => handleClick(addbreak)} className='btn btn-xl'>50<small>s</small></button> */}
+                    <button onClick={() => handleClick('one')} className='btn btn-xl'><span id='one'>10<small>s</small></span></button>
+                    <button onClick={() => handleClick('two')} className='btn btn-xl'><span id='two'>20<small>s</small></span></button>
+                    <button onClick={() => handleClick('three')} className='btn btn-xl'><span id='three'>30<small>s</small></span></button>
+                    <button onClick={() => handleClick('four')} className='btn btn-xl'><span id='four'>40<small>s</small></span></button>
+                    <button onClick={() => handleClick('five')} className='btn btn-xl'><span id='five'>50<small>s</small></span></button>
                 </div>
             </div>
             <div className='ed px-3 mt-16'>
@@ -72,7 +61,7 @@ const Cart = (props) => {
                 </div>
                 <div className='flex justify-between p-2 bg-base-300 rounded mt-4 py-3'>
                     <p>Break Time</p>
-                    <p>{localStorage.getItem('time')}{addbreak}s</p>
+                    <p id='rest'>{localStorage.getItem('time')}</p>
                 </div>
             </div>
             <div onClick={toast} className='btn-completed'>
