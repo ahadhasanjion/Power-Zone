@@ -4,7 +4,7 @@ import './Exercises.css';
 const Exercises = ({exercises, addToCart}) => {
     const {img,name,age,time} = exercises;
     return ( 
-        <div className="mt-8">
+        <div className="py-8">
             <div className="card w-100 bg-base-100 shadow-2xl">
                 <figure><img className='rounded-2xl mt-5' src={img} alt="Shoes" /></figure>
                 <div className="card-body">

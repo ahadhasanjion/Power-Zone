@@ -20,12 +20,13 @@ const Cart = (props) => {
             <div className='my-6'>
                 <p className='px-3 mb-4'>Add A Break</p>
                 <div className='add-a-break flex'>
-                    <span><small>s</small></span>
-                    <span>20<small>s</small></span>
-                    <span>30<small>s</small></span>
-                    <span>40<small>s</small></span>
-                    <span>50<small>s</small></span>
-
+                    <ul className='grid grid-cols-5'>
+                        <li>10s</li>
+                        <li>20s</li>
+                        <li>30s</li>
+                        <li>40s</li>
+                        <li>50s</li>
+                    </ul>
                 </div>
             </div>
             <div className='ed px-3'>
@@ -34,7 +35,7 @@ const Cart = (props) => {
                     <p>Exercise Time</p>
                     <p>{seconds}s</p>
                 </div>
-                <div className='flex justify-between p-2 bg-base-300 rounded mt-4'>
+                <div className='flex justify-between p-2 bg-base-300 rounded mt-4 py-3'>
                     <p>Break Time</p>
                     <p>seconds</p>
                 </div>

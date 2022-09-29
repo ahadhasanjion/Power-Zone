@@ -1,14 +1,8 @@
 .exercise{
     padding-left: 100px;
     padding-right: 100px;
-    display: flex;
-    flex-direction: row;
 }
-.exercises{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
+
 .exercise-container{
     margin-right: 10px;
 }
