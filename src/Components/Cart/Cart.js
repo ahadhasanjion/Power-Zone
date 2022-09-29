@@ -45,7 +45,7 @@ const Cart = (props) => {
             </div>
             <div className='btn-completed'>
                 <button className="btn btn-primary w-100 mt-10">
-                Swal.fire('Good job!','You clicked the button!','success');
+                Swal.fire(Good job!,You clicked the button!success);
 
                     Exercise Completed
                 </button>
