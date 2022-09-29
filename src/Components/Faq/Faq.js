@@ -4,7 +4,7 @@ import './Faq.css';
 const Faq = () => {
     return ( 
         <div>
-            <div class="accordion faq" id="accordionExample">
+            <div class="accordion faq pt-10" id="accordionExample">
   <div class="accordion-item mb-5 bg-white border border-gray-200">
     <h2 class="accordion-header mb-0" id="headingOne">
       <button class="
